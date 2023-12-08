@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FitMe</string>
+    <string name="Login">Login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="Register">Register</string>
+</resources>

@@ -1,0 +1,84 @@
+<!-- note_view_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Note TextView -->
+    <TextView
+        android:id="@+id/textViewTitleNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="Artikel Title"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textViewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Note content goes here"
+        android:padding="8dp"
+        />
+    <EditText
+        android:id="@+id/EditNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="5"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Close Button -->
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/buttonSaveEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+    </LinearLayout>
+</LinearLayout>
